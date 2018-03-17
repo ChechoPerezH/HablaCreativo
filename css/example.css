@@ -1,0 +1,222 @@
+/** General styles **/
+html,
+body {
+	color: #46200D;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 25px;
+	letter-spacing: normal;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.logo {
+	margin-left: 2%;
+	position: absolute;
+}
+
+.logo .image {
+	width: 200px;
+	height: 84px;
+	background: url(../media/Recortes/Remanso-05.png) no-repeat;
+	background-size: 200px;
+}
+
+nav {
+	background-color: #46200D;
+	display: flex;
+	justify-content: center;
+	padding: 14px 0;
+	color: #fff;
+}
+
+nav ul li {
+	display: inline-flex;
+}
+
+nav li::after {
+	content: "|";
+	padding: 0 5px 0 10px;
+}
+
+nav li:last-child::after {
+  content: "";
+}
+
+nav li a {
+	color: #fff;
+}
+
+nav li a:hover {
+	text-decoration: none;
+	color: #ECA43D;
+}
+
+.banner {
+	background: url("../media/Remanso-43.png") no-repeat center fixed;
+	background-size: cover;
+	height: 600px;
+}
+
+.banner .form {
+	display: flex;
+	width: fit-content;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.banner .left-form {
+	background: url("../media/Recortes/Remanso-07.png") no-repeat;
+	height: 421px;
+	width: 470px;
+}
+
+.banner .right-form {
+	background: url("../media/Recortes/Remanso-08.png") no-repeat;
+	height: 421px;
+	width: 470px;
+}
+
+.right-form .fieldset {
+	display: flex;
+	flex-direction: column;
+	padding: 90px 40px 20px 40px;
+}
+
+.fieldset textarea {
+	resize: none;
+}
+
+.right-form .fieldset input{
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+@media (max-width: 960px) {
+	.banner .left-form {
+		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.banner .right-form {
+		background-size: 400px;
+		height: 358px;
+		width: 400px;
+	}
+}
+
+@media (max-width: 410px) {
+	.banner .right-form {
+		background-size: 300px;
+		height: 358px;
+		width: 300px;
+	}
+}
+
+
+section {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+section .flex {
+	max-width: 1100px;
+	margin-bottom: 50px;
+}
+
+section .main-info {
+  background: url("../media/Recortes/Remanso-19.png") no-repeat;
+	width: 1007px;
+	height: 257px;
+}
+
+@media (max-width: 1040px) {
+	section .main-info {
+		background: url("../media/Recortes/Remanso-20.png") no-repeat;
+		width: 469px;
+		height: 418px;
+	}
+}
+
+@media (max-width: 510px) {
+	section .main-info {
+		background-size: 300px;
+		width: 300px;
+		height: 268px;
+	}
+}
+
+section .card {
+	margin-bottom: 40px;
+	padding: 0 10px;
+}
+
+footer {
+	background: url("../media/Recortes/Remanso-36.png");
+	padding: 50px 10px 30px 10px;
+}
+
+footer h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto 10px auto;
+	text-align: center;
+}
+
+footer .centered {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer i {
+	height: 82px;
+	width: 90px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+footer i.tel {
+	background: url("../media/Recortes/Remanso-31.png");
+}
+
+footer i.dir {
+	background: url("../media/Recortes/Remanso-32.png");
+}
+
+footer i.schedule {
+	background: url("../media/Recortes/Remanso-33.png");
+}
+
+footer i.email {
+	background: url("../media/Recortes/Remanso-34.png");
+}
+
+footer .footer-icons {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 25px 5px 0 5px;
+}
+
+footer .footer-icons .title {
+	font-weight: bold;
+}
+
+footer p.info {
+	margin: 20px auto;
+	font-size: 0.8em;
+	line-height: 15px;
+	padding: 0 20px;
+	width: inherit;
+}
